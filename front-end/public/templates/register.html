@@ -1,0 +1,46 @@
+<div class="container" >
+    <div class="card card-login">
+        <div class="card-header">
+            <h1>Pronto para iniciar em novo mundo envolvendo capivaras?</h1>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger" ng-if="msgerror">
+                {{ msgerror}}
+            </div>
+
+            <div class="form-group">
+                <label>Usuário</label>
+                <input type="text" class="form-control" placeholder="Informe o usuário" ng-model="register.user"/>
+            </div>
+
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" class="form-control" placeholder="Informe a senha" ng-model="register.password" />
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Informe o email" ng-model="register.email" />
+            </div>
+
+            <div class="form-group">
+                <label>Escolha o Sprite</label>
+                <select ng-model="register.sprite">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="form-group text-right">
+                <button role="button" class="btn btn-primary" ng-click="cadastrar()">Cadastrar</button>
+                <a href="/#!/login" class="btn btn-dark">Efetuar Login</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
